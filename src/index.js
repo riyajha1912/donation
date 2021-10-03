@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Form from "./individual-forms/different_ways";
+import { Container } from "react-bootstrap";
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Index = () => {
+  $(window).on("load", function () {
+    $("body").removeClass("preload");
+  });
+  return (
+    <>
+      <Container className="indi-donation" fluid>
+        <Form />
+      </Container>
+    </>
+  );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<Index />, document.querySelector("#root"));

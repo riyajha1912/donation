@@ -1,0 +1,11 @@
+.donateFoodHeader {
+  justify-content: space-evenly;
+  column-gap: 530px;
+}
+.hideFormButton {
+  color: grey;
+}
+
+.hideFormButton:hover {
+  color: black;
+}

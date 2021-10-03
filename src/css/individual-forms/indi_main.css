@@ -1,0 +1,45 @@
+.indi-image {
+  object-fit: cover;
+  border-bottom-right-radius: 5rem;
+  opacity: 0.4;
+}
+
+.indi-card {
+  clip-path: inset(100px 0 0 0);
+  height: 112vh;
+  overflow: hidden;
+  width: 100vw;
+  border-bottom-right-radius: 5rem;
+  background-color: black;
+  margin: -5.5rem 0 0 -1rem;
+}
+
+.indi-content {
+  padding: 18% 20% 0 10%;
+}
+
+.indi-content .indi-header {
+  font-size: 55px;
+  width: 63%;
+}
+
+.indi-content .indi-text {
+  width: 63%;
+}
+
+.indi-mini-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 60%;
+  margin-left: 19%;
+  text-align: center;
+  background: rgb(160, 77, 216);
+  box-shadow: 0 8px 8px -4px crimson;
+  color: white;
+}
+
+.indi-mini-text .text-body {
+  padding-top: 30px;
+  color: white !important;
+}
