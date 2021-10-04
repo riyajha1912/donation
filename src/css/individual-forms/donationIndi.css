@@ -3,9 +3,48 @@
   column-gap: 530px;
 }
 .hideFormButton {
-  color: grey;
+  color: white;
+  margin-left: 535px;
 }
 
 .hideFormButton:hover {
   color: black;
+}
+
+.food-body,
+.meetSchedBody,
+.eduBody {
+  background: #ffdd00;
+}
+
+.donationFields,
+.datePickerMeeting {
+  opacity: 0.7;
+}
+
+.food-header,
+.food-footer,
+.meetSchedHeader,
+.meetSchedFooter,
+.eduHeader,
+.eduFooter {
+  background: #ff3c36;
+  color: white;
+}
+
+.food-button,
+.food-button:hover,
+.food-button:corner-present,
+.timeSlot,
+.timeSlot:hover,
+.timeSlot:corner-present,
+.submitButtonMeetSched,
+.submitButtonMeetSched:hover,
+.submitButtonMeetSched:corner-present,
+.donateEduButton,
+.donateEduButton:hover,
+.donateEduButton:corner-present {
+  background: #7a4579;
+  border: none;
+  color: white;
 }

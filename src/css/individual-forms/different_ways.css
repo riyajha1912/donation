@@ -1,5 +1,5 @@
 .donation-box {
-  box-shadow: 0 3px 10px rgb(160, 77, 216);
+  box-shadow: 0 3px 10px #7a4579;
   padding: 50px;
   width: 30%;
   border-radius: 10px;
@@ -18,23 +18,23 @@
 }
 
 .donation-rows:nth-child(1) .donation-box:nth-child(1) {
-  background: crimson;
+  background: #ff3c36;
   color: white !important;
 }
 
 .donation-rows:nth-child(1) .donation-box:nth-child(2) {
-  background: yellow;
+  background: #ffdd00;
 }
 .donation-rows:nth-child(1) .donation-box:nth-child(3) {
-  background: crimson;
+  background: #ff3c36;
   color: white !important;
 }
 
 .donation-rows:nth-child(2) .donation-box:nth-child(1) {
-  background: yellow;
+  background: #ffdd00;
 }
 
 .donation-rows:nth-child(2) .donation-box:nth-child(2) {
-  background: crimson;
+  background: #ff3c36;
   color: white !important;
 }

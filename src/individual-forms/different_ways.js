@@ -5,46 +5,15 @@ import { Row, Col } from "react-bootstrap";
 import FoodDonate from "./foodDonate";
 import MeetSched from "./meet-sched";
 import EduDonate from "./donateEdu";
+import FollowSocials from "./followSocials";
 
 const DonateVolunteer = () => {
   const [foodDonationShow, setFoodDonationShow] = React.useState(false);
   const [eduDonationShow, setEduDonationShow] = React.useState(false);
   const [meetSchedShow, setMeetSchedShow] = React.useState(false);
-
+  const [socialsShow, setSocialsShow] = React.useState(false);
   return (
     <>
-      <FoodDonate
-        show={foodDonationShow}
-        onHide={() => {
-          setFoodDonationShow(false);
-          setMeetSchedShow(true);
-        }}
-        hideBoth={() => {
-          setFoodDonationShow(false);
-          setMeetSchedShow(false);
-        }}
-        backdrop="static"
-        keyboard={false}
-      />
-      <MeetSched
-        show={meetSchedShow}
-        onHide={() => setMeetSchedShow(false)}
-        backdrop="static"
-        keyboard={false}
-      />
-      <EduDonate
-        show={eduDonationShow}
-        onHide={() => {
-          setEduDonationShow(false);
-          setMeetSchedShow(true);
-        }}
-        hideBoth={() => {
-          setEduDonationShow(false);
-          setMeetSchedShow(false);
-        }}
-        backdrop="static"
-        keyboard={false}
-      />
       <Row className="donation-rows">
         <Col className="donation-box">
           <p>icon</p>
@@ -77,7 +46,13 @@ const DonateVolunteer = () => {
         </Col>
       </Row>
       <Row className="donation-rows">
-        <Col className="donation-box" xs={8}>
+        <Col
+          className="donation-box"
+          xs={8}
+          onClick={() => {
+            setSocialsShow(true);
+          }}
+        >
           <p>icon</p>
           <h4>Promote NGO</h4>
           <p>
@@ -96,6 +71,46 @@ const DonateVolunteer = () => {
           </p>
         </Col>
       </Row>
+      <FollowSocials
+        show={socialsShow}
+        onHide={() => {
+          setSocialsShow(false);
+        }}
+        backdrop="static"
+        keyboard={false}
+      />
+      <FoodDonate
+        show={foodDonationShow}
+        onHide={() => {
+          setFoodDonationShow(false);
+          setMeetSchedShow(true);
+        }}
+        hideBoth={() => {
+          setFoodDonationShow(false);
+          setMeetSchedShow(false);
+        }}
+        backdrop="static"
+        keyboard={false}
+      />
+      <MeetSched
+        show={meetSchedShow}
+        onHide={() => setMeetSchedShow(false)}
+        backdrop="static"
+        keyboard={false}
+      />
+      <EduDonate
+        show={eduDonationShow}
+        onHide={() => {
+          setEduDonationShow(false);
+          setMeetSchedShow(true);
+        }}
+        hideBoth={() => {
+          setEduDonationShow(false);
+          setMeetSchedShow(false);
+        }}
+        backdrop="static"
+        keyboard={false}
+      />
     </>
   );
 };

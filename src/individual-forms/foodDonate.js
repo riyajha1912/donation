@@ -60,9 +60,9 @@ const FoodDonate = (props) => {
       >
         <Modal.Header className="food-header">
           <Modal.Title id="contained-modal-title-vcenter">
-            <Row className="donateFoodHeader">
-              <Col xs="auto">Donation Form</Col>
-              <Col xs="auto">
+            <Row>
+              <Col>Donation Form</Col>
+              <Col>
                 <Button
                   variant="transparent"
                   onClick={props.hideBoth}
@@ -74,11 +74,14 @@ const FoodDonate = (props) => {
             </Row>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="food-body">
           <Form>
             <Row className="g-2">
               <Col xs="auto">
-                <Form.Group className="mb-3" controlId="userFName">
+                <Form.Group
+                  className="mb-3 donationFields"
+                  controlId="userFName"
+                >
                   <Form.Label>First Name</Form.Label>
                   <FloatingLabel
                     controlId="floatingFirstName"
@@ -104,7 +107,10 @@ const FoodDonate = (props) => {
                 </Form.Group>
               </Col>
               <Col xs="auto">
-                <Form.Group className="mb-3" controlId="userLName">
+                <Form.Group
+                  className="mb-3 donationFields"
+                  controlId="userLName"
+                >
                   <Form.Label>Last Name</Form.Label>
                   <FloatingLabel
                     controlId="floatingLName"
@@ -132,7 +138,10 @@ const FoodDonate = (props) => {
             </Row>
             <Row>
               <Col>
-                <Form.Group className="mb-3" controlId="userPhNo">
+                <Form.Group
+                  className="mb-3 donationFields"
+                  controlId="userPhNo"
+                >
                   <Form.Label>Contact No.</Form.Label>
                   <FloatingLabel
                     controlId="floatingPhNo"
@@ -167,6 +176,7 @@ const FoodDonate = (props) => {
                   label="Donation Materials"
                 >
                   <Form.Select
+                    className="donationFields"
                     aria-label="Food Donation"
                     onClick={(e) => {
                       showTextArea(e);
@@ -181,8 +191,13 @@ const FoodDonate = (props) => {
                 </FloatingLabel>
               </Col>
               <Col>
-                <FloatingLabel controlId="donationList" label="Donation List">
+                <FloatingLabel
+                  controlId="donationList"
+                  className="donationFields"
+                  label="Donation List"
+                >
                   <Form.Control
+                    className="donationFields"
                     as="textarea"
                     value={foodDonationList.join("\n")}
                     style={{ height: "130px", width: "200px" }}
@@ -196,11 +211,12 @@ const FoodDonate = (props) => {
             </Row>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="food-footer">
           <Button
             onClick={(e) => {
               handleFoodForm(e);
             }}
+            className="food-button"
           >
             Next
           </Button>

@@ -55,9 +55,9 @@ export const EduDonate = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header className="food-header">
+        <Modal.Header className="eduHeader">
           <Modal.Title id="contained-modal-title-vcenter">
-            <Row className="donateFoodHeader">
+            <Row className="donateEduHeader">
               <Col xs="auto">Donation Form</Col>
               <Col xs="auto">
                 <Button
@@ -71,11 +71,14 @@ export const EduDonate = (props) => {
             </Row>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="eduBody">
           <Form>
             <Row className="g-2">
               <Col xs="auto">
-                <Form.Group className="mb-3" controlId="userFName">
+                <Form.Group
+                  className="mb-3 donationFields"
+                  controlId="userFName"
+                >
                   <Form.Label>First Name</Form.Label>
                   <FloatingLabel
                     controlId="floatingFirstName"
@@ -99,7 +102,10 @@ export const EduDonate = (props) => {
                 </Form.Group>
               </Col>
               <Col xs="auto">
-                <Form.Group className="mb-3" controlId="userLName">
+                <Form.Group
+                  className="mb-3 donationFields"
+                  controlId="userLName"
+                >
                   <Form.Label>Last Name</Form.Label>
                   <FloatingLabel
                     controlId="floatingLName"
@@ -125,7 +131,10 @@ export const EduDonate = (props) => {
             </Row>
             <Row>
               <Col>
-                <Form.Group className="mb-3" controlId="userPhNo">
+                <Form.Group
+                  className="mb-3 donationFields"
+                  controlId="userPhNo"
+                >
                   <Form.Label>Contact No.</Form.Label>
                   <FloatingLabel
                     controlId="floatingPhNo"
@@ -158,14 +167,16 @@ export const EduDonate = (props) => {
                 <FloatingLabel
                   controlId="floatingEdu"
                   label="Donation Materials"
+                  className="donationFields"
                 >
                   <Form.Select
+                    className="donationFIelds"
                     aria-label="Donation For Education"
                     onClick={(e) => {
                       showTextArea(e);
                     }}
                   >
-                    <option>--Select--</option>
+                    <option className="donationFIelds">--Select--</option>
                     <option value="Money">Money</option>
                     <option value="Books">Books</option>
                     <option value="Electronics">Electronics</option>
@@ -175,7 +186,11 @@ export const EduDonate = (props) => {
                 </FloatingLabel>
               </Col>
               <Col>
-                <FloatingLabel controlId="donationList" label="Donation List">
+                <FloatingLabel
+                  controlId="donationList"
+                  className="donationFields"
+                  label="Donation List"
+                >
                   <Form.Control
                     as="textarea"
                     value={dynamicDonationList.join("\n")}
@@ -192,11 +207,12 @@ export const EduDonate = (props) => {
             </Row>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="eduFooter">
           <Button
             onClick={(e) => {
               handleForm(e);
             }}
+            className="donateEduButton"
           >
             Next
           </Button>

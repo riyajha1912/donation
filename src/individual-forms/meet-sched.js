@@ -21,17 +21,17 @@ const MeetSched = (props) => {
     <>
       <Modal
         {...props}
-        className="foodDonateCard"
+        className="meetschedCard"
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header className="food-header" closeButton>
+        <Modal.Header className="meetSchedHeader" closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
             Donation Form
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="meetSchedBody">
           <Form>
             <Row>
               <Col xs="auto">
@@ -41,11 +41,13 @@ const MeetSched = (props) => {
                     selected={startDate}
                     minDate={new Date()}
                     onChange={(date) => setStartDate(date)}
+                    className="datePickerMeeting"
                   />
                 </Form.Group>
               </Col>
               <Col xs="auto">
                 <Button
+                  className="timeSlot"
                   variant="info"
                   onClick={() => {
                     setTimeSlot("9-11");
@@ -54,6 +56,7 @@ const MeetSched = (props) => {
                   9:00 A.M - 11:00 A.M
                 </Button>{" "}
                 <Button
+                  className="timeSlot"
                   variant="info"
                   onClick={() => {
                     setTimeSlot("11-1");
@@ -64,6 +67,7 @@ const MeetSched = (props) => {
                 <br />
                 <br />
                 <Button
+                  className="timeSlot"
                   variant="info"
                   onClick={() => {
                     setTimeSlot("1-3");
@@ -72,28 +76,30 @@ const MeetSched = (props) => {
                   1:00 P.M. - 3:00 P.M.
                 </Button>{" "}
                 <Button
+                  className="timeSlot"
                   variant="info"
                   onClick={() => {
                     setTimeSlot("3-5");
                   }}
                 >
                   3:00 P.M. - 5:00 P.M.
-                </Button>{" "}
+                </Button>
                 <p id="error-field">{isNotSelected && "Time Not Selected"}</p>
               </Col>
             </Row>
           </Form>
-
-          <Modal.Footer>
-            <Button
-              onClick={(e) => {
-                handleMeet(e);
-              }}
-            >
-              Submit
-            </Button>
-          </Modal.Footer>
         </Modal.Body>
+
+        <Modal.Footer className="meetSchedFooter">
+          <Button
+            onClick={(e) => {
+              handleMeet(e);
+            }}
+            className="submitButtonMeetSched"
+          >
+            Submit
+          </Button>
+        </Modal.Footer>
       </Modal>
     </>
   );

@@ -1,0 +1,48 @@
+.instaFollow {
+  width: 100px;
+  background: -webkit-linear-gradient(
+    -135deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fbFollow {
+  width: 100px;
+  background: -webkit-radial-gradient(#4267b3 50px, #90949c, #616771);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lIFollow {
+  width: 100px;
+  background: -webkit-radial-gradient(#215492 50px, #90949c, #616771);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.twtFollow {
+  width: 100px;
+  background: -webkit-radial-gradient(#1da1f2 50px, #90949c, #616771);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socialBody {
+  background: #ffdd00;
+}
+
+.socialHeader {
+  background: #ff3c36;
+  color: white;
+}
