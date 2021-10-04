@@ -16,7 +16,9 @@ const DonateVolunteer = () => {
     <>
       <Row className="donation-rows">
         <Col className="donation-box">
-          <p>icon</p>
+          <p>
+            <i className="fas fa-donate fa-3x" style={{ color: "white" }}></i>
+          </p>
           <h4>Donate Monthly</h4>
           <p>
             You can be a Helping Hands by donate monthly to NGO. Your donation
@@ -29,7 +31,12 @@ const DonateVolunteer = () => {
             setEduDonationShow(true);
           }}
         >
-          <p>icon</p>
+          <p>
+            <i
+              className="fas fa-book-reader fa-3x"
+              style={{ color: "black" }}
+            ></i>
+          </p>
           <h4>Donate Education</h4>
           <p>
             You can sponsor a one child education for lifetime. You can donate
@@ -37,7 +44,9 @@ const DonateVolunteer = () => {
           </p>
         </Col>
         <Col className="donation-box" onClick={() => setFoodDonationShow(true)}>
-          <p>icon</p>
+          <p>
+            <i className="fas fa-utensils fa-3x" style={{ color: "white" }}></i>
+          </p>
           <h4>Donate Food</h4>
           <p>
             You can sponsor food for a child to make healthier. You can donate
@@ -53,7 +62,12 @@ const DonateVolunteer = () => {
             setSocialsShow(true);
           }}
         >
-          <p>icon</p>
+          <p>
+            <i
+              className="fas fa-share-alt-square fa-3x"
+              style={{ color: "black" }}
+            ></i>
+          </p>
           <h4>Promote NGO</h4>
           <p>
             You can act as a change maker for NGO on social media, promoting
@@ -61,7 +75,9 @@ const DonateVolunteer = () => {
           </p>
         </Col>
         <Col className="donation-box" xs={8}>
-          <p>icon</p>
+          <p>
+            <i className="fas fas fa-gift fa-3x" style={{ color: "white" }}></i>
+          </p>
           <h4>Give A Hope</h4>
           <p>
             You are Saksham, the ones who have a decent source of income and are
