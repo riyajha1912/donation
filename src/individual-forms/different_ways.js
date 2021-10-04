@@ -21,7 +21,7 @@ const DonateVolunteer = () => {
           </p>
           <h4>Donate Monthly</h4>
           <p>
-            You can be a Helping Hands by donate monthly to NGO. Your donation
+            You can be a Helping Hand by donating monthly to NGO. Your donation
             can educate a child, feed a child and care for those who need it.
           </p>
         </Col>
@@ -39,7 +39,7 @@ const DonateVolunteer = () => {
           </p>
           <h4>Donate Education</h4>
           <p>
-            You can sponsor a one child education for lifetime. You can donate
+            You can sponsor a child's education for lifetime. You can donate
             books, computers, stationary and many more things.
           </p>
         </Col>
