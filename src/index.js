@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import $ from "jquery";
-import Form from "./individual-forms/different_ways";
+import Form from "./individual-forms/indi_main";
 import { Container } from "react-bootstrap";
 import "./index.css";
 

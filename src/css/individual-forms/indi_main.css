@@ -5,21 +5,22 @@
 }
 
 .indi-card {
-  clip-path: inset(100px 0 0 0);
-  height: 112vh;
+  clip-path: inset(10em 0 0 0);
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
+  max-width: 980px;
   border-bottom-right-radius: 5rem;
   background-color: black;
-  margin: -5.5rem 0 0 -1rem;
+
+  margin: -5.5rem auto;
 }
 
 .indi-content {
-  padding: 18% 20% 0 10%;
+  padding: 20em 0em 0 10em;
 }
 
 .indi-content .indi-header {
-  font-size: 55px;
+  font-size: 2rem;
   width: 63%;
 }
 
@@ -28,18 +29,55 @@
 }
 
 .indi-mini-text {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 20px;
-  width: 60%;
-  margin-left: 19%;
+  padding: 0.5em;
+  width: 90%;
+  max-width: 870px;
+  margin: 0 auto;
   text-align: center;
-  background: rgb(160, 77, 216);
-  box-shadow: 0 8px 8px -4px crimson;
+  background: #7a4579;
+  box-shadow: 0 8px 8px -4px #ff3c36;
   color: white;
 }
 
 .indi-mini-text .text-body {
   padding-top: 30px;
   color: white !important;
+}
+
+@media screen and (max-width: 748px) {
+  .indi-card {
+    margin-top: 3rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 0rem;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .indi-content .indi-header {
+    font-size: 25px;
+    width: 90%;
+  }
+
+  .indi-content .indi-text {
+    width: 90%;
+    font-size: 15px;
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 748px) and (min-width: 517px) {
+  .indi-content {
+    font-size: 4px;
+    padding: 20em 0em 0 10em;
+  }
+}
+@media screen and (max-width: 930px) {
+  .indi-content {
+    padding: 11em 0 3em 10em;
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .indi-card {
+    display: none;
+  }
 }

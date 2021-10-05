@@ -58,8 +58,8 @@ export const EduDonate = (props) => {
         <Modal.Header className="eduHeader">
           <Modal.Title id="contained-modal-title-vcenter">
             <Row className="donateEduHeader">
-              <Col xs="auto">Donation Form</Col>
-              <Col xs="auto">
+              <Col className="eduDonationFormHeader">Donation Form</Col>
+              <Col className="hideFormButtonCol">
                 <Button
                   variant="transparent"
                   onClick={props.hideBoth}
@@ -164,27 +164,31 @@ export const EduDonate = (props) => {
             </Row>
             <Row>
               <Col>
-                <FloatingLabel
-                  controlId="floatingEdu"
-                  label="Donation Materials"
-                  className="donationFields"
-                >
-                  <Form.Select
-                    className="donationFIelds"
-                    aria-label="Donation For Education"
-                    onClick={(e) => {
-                      showTextArea(e);
-                    }}
+                <Form.Group className="mb-3">
+                  <FloatingLabel
+                    controlId="floatingEdu"
+                    label="Donation Materials"
+                    className="donationFields mb-3"
                   >
-                    <option className="donationFIelds">--Select--</option>
-                    <option value="Money">Money</option>
-                    <option value="Books">Books</option>
-                    <option value="Electronics">Electronics</option>
-                    <option value="Stationary">Stationary</option>
-                    <option value="Other">Others</option>
-                  </Form.Select>
-                </FloatingLabel>
+                    <Form.Select
+                      className="donationFIelds"
+                      aria-label="Donation For Education"
+                      onClick={(e) => {
+                        showTextArea(e);
+                      }}
+                    >
+                      <option className="donationFIelds">--Select--</option>
+                      <option value="Money">Money</option>
+                      <option value="Books">Books</option>
+                      <option value="Electronics">Electronics</option>
+                      <option value="Stationary">Stationary</option>
+                      <option value="Other">Others</option>
+                    </Form.Select>
+                    <Form.Text></Form.Text>
+                  </FloatingLabel>
+                </Form.Group>
               </Col>
+
               <Col>
                 <FloatingLabel
                   controlId="donationList"

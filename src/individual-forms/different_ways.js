@@ -15,7 +15,7 @@ const DonateVolunteer = () => {
   return (
     <>
       <Row className="donation-rows">
-        <Col className="donation-box">
+        <Col className="donation-box mb-4">
           <p>
             <i className="fas fa-donate fa-3x" style={{ color: "white" }}></i>
           </p>
@@ -26,7 +26,7 @@ const DonateVolunteer = () => {
           </p>
         </Col>
         <Col
-          className="donation-box"
+          className="donation-box mb-4"
           onClick={() => {
             setEduDonationShow(true);
           }}
@@ -43,7 +43,10 @@ const DonateVolunteer = () => {
             books, computers, stationary and many more things.
           </p>
         </Col>
-        <Col className="donation-box" onClick={() => setFoodDonationShow(true)}>
+        <Col
+          className="donation-box mb-4"
+          onClick={() => setFoodDonationShow(true)}
+        >
           <p>
             <i className="fas fa-utensils fa-3x" style={{ color: "white" }}></i>
           </p>
@@ -56,8 +59,7 @@ const DonateVolunteer = () => {
       </Row>
       <Row className="donation-rows">
         <Col
-          className="donation-box"
-          xs={8}
+          className="donation-box mb-4"
           onClick={() => {
             setSocialsShow(true);
           }}
@@ -74,7 +76,7 @@ const DonateVolunteer = () => {
             there activities and how we are changing the life of people.
           </p>
         </Col>
-        <Col className="donation-box" xs={8}>
+        <Col className="donation-box mb-4 mr-4">
           <p>
             <i className="fas fas fa-gift fa-3x" style={{ color: "white" }}></i>
           </p>

@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <>
       <Container fluid>
-        <Card className=" text-white indi-card">
+        <Card className=" text-white indi-card mb-4">
           <Card.Img src={`${tomoe}`} className="indi-image" />
           <Card.ImgOverlay className="indi-content">
             <Card.Title className="indi-header">
@@ -27,7 +27,7 @@ const Main = () => {
           </Card.ImgOverlay>
         </Card>
 
-        <div className="indi-mini-text">
+        <div className="indi-mini-text mb-4">
           <h3 className="text-header">
             An Organization That Helps People who is in need
           </h3>
