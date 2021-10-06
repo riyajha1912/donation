@@ -13,10 +13,19 @@
   /* margin-left: 550px; */
 }
 
-.eduDonationFormHeader .hideFormButtonCol {
-  width: 100%;
+.DonationFormHeader {
+  width: 1050px;
 }
-
+@media screen and (max-width: 980px) {
+  .DonationFormHeader {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .DonationFormHeader {
+    width: 450px;
+  }
+}
 .hideFormButton:hover {
   color: black;
 }

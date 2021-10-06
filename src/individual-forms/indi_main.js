@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Container } from "react-bootstrap";
 import tomoe from "../images/help-finger-touch.jpg";
 import DonateVolunteer from "./different_ways";
+import Donation from "./indiDonationDesc";
 import "../css/individual-forms/indi_main.css";
 
 const Main = () => {
@@ -38,6 +39,9 @@ const Main = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing.
           </p>
         </div>
+        <Container>
+          <Donation />
+        </Container>
         <Container>
           <DonateVolunteer />
         </Container>

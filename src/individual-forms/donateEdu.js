@@ -58,7 +58,7 @@ export const EduDonate = (props) => {
         <Modal.Header className="eduHeader">
           <Modal.Title id="contained-modal-title-vcenter">
             <Row className="donateEduHeader">
-              <Col className="eduDonationFormHeader">Donation Form</Col>
+              <Col className="DonationFormHeader">Donation Form</Col>
               <Col className="hideFormButtonCol">
                 <Button
                   variant="transparent"

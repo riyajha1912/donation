@@ -61,7 +61,7 @@ const FoodDonate = (props) => {
         <Modal.Header className="food-header">
           <Modal.Title id="contained-modal-title-vcenter">
             <Row>
-              <Col>Donation Form</Col>
+              <Col className=" DonationFormHeader">Donation Form</Col>
               <Col>
                 <Button
                   variant="transparent"

@@ -1,0 +1,90 @@
+.descRowIndi {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  max-width: 980px;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.descColIndi {
+  padding: 0.7em;
+  color: blanchedalmond;
+  font-size: 1rem;
+}
+.descColIndi,
+.descColImg {
+  max-width: 50%;
+}
+
+.descColImg img {
+  max-width: 100%;
+  margin: 0 0 0 0em;
+  border-radius: 5rem;
+  padding: 0.7em;
+}
+
+.descRowIndi .descColIndi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border-radius: 1em;
+}
+
+.descColIndi .descTitle,
+.descColIndi .descContent {
+  padding: 0.3em;
+  margin: 0;
+}
+
+.descTitle .descContent {
+  width: 50% !important;
+}
+
+.descRowIndi:nth-child(1) .descColIndi {
+  background-color: #ffdd00;
+  color: black;
+}
+
+.descRowIndi:nth-child(2) .descColIndi {
+  background-color: #7a4579;
+}
+
+.descColIndi .descColImg {
+  display: none;
+}
+
+@media screen and (max-width: 1004px) {
+  .descRowIndi .descColImg {
+    display: none;
+  }
+
+  .descColIndi .descColImg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .descRowIndi .descColIndi {
+    margin: 1em auto;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .descRowIndi .descColIndi {
+    margin: 1em auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .descColIndi .descColImg {
+    display: none;
+  }
+
+  .descRowIndi .descColIndi {
+    margin: 0.75em auto;
+    max-width: 500%;
+  }
+}
